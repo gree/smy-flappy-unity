@@ -1,0 +1,14 @@
+Start:
+  WaitStartGame:
+
+WaitStartGame:
+  StartGame: {when: "タップ"}
+
+StartGame:
+  GameOver: {when: "障害物に衝突"}
+
+GameOver:
+  WaitInitGame: {when: "GameOverアニメーション終了"}
+
+WaitInitGame:
+  WaitStartGame: {when: "タップ"}
